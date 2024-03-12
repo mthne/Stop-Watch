@@ -3,7 +3,7 @@ const stopBtn = document.getElementById("stop");
 const resetBtn = document.getElementById("reset");
 const hoursElement = document.getElementById("hours");
 const minuteElement = document.getElementById("minutes");
-const secondElement = document.getElementById("second");
+const secondElement = document.getElementById("seconds");
 const milliSecondElement = document.getElementById("millisecond");
 
 let hours = 0;
@@ -34,12 +34,6 @@ function updateTimer() {
     milliSecond < 10 ? "0" + milliSecond : milliSecond;
 }
 
-function updateMilliSeconds() {
-  milliSecondElement.style.fontSize = "40px";
-  setTimeout(() => {
-    milliSecondElement.style.fontSize = "30px";
-  }, 100);
-}
 function startTimer() {
   if (!isTimerRunning) {
     timer = setInterval(updateTimer, 10);
