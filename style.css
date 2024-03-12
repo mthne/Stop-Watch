@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #f0bce9b0;
+}
+
+.container {
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.container-time {
+  text-align: center;
+  width: 100%;
+  font-weight: 200;
+  font-size: 128px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0bce9b0;
+  box-shadow: 0 0 0 2px rgba(218, 102, 123, 1),
+    8px 8px 0 0 rgba(218, 102, 123, 1);
+}
+h1 {
+  font-size: 64px;
+  box-shadow: 0 0 0 2px rgba(218, 102, 123, 1),
+    8px 8px 0 0 rgba(218, 102, 123, 1);
+  margin-bottom: 20px;
+}
+button {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset,
+    0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset,
+    0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset, 0px 2px 1px rgba(0, 0, 0, 0.06),
+    0px 4px 2px rgba(0, 0, 0, 0.09), 0px 8px 4px rgba(0, 0, 0, 0.09),
+    0px 16px 8px rgba(0, 0, 0, 0.09);
+}
+button:hover {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+#start {
+  background-color: rgba(40, 160, 16, 0.664);
+}
+#stop {
+  background-color: rgba(255, 0, 0, 0.664);
+}
+#reset {
+  background-color: rgba(49, 151, 192, 0.623);
+}
+#millisecond {
+  font-size: 30px;
+  width: 30px;
+}
+.time-button {
+  width: 200px;
+}
+#hours:after,
+#minutes:after,
+#seconds:after {
+  content: ":";
+}
